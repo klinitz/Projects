@@ -1,5 +1,5 @@
 name = input("Please type your name: ")
-print("Welcome", name, "to this adventure!")
+print("Welcome to this adventure", name + "!")
 
 answer = input("You are on a dirt road, it has come to an end, and you can go LEFT or RIGHT. Which way would you like to go? (left/right): ").lower()
 
@@ -7,7 +7,7 @@ if answer == "left":
     answer = input("You come to a river, you can WALK around it or SWIM across. (walk/swim): ")
 
     if answer == "swim":
-        print("You swam across and were eaten by an alligator.")
+        print("You swam across and were eaten by an alligator :(")
     elif answer == "walk":
         print("You walked for many miles, ran out of water and you lost the game")
     else:
