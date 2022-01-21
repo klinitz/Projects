@@ -1,11 +1,19 @@
 print("Welcome to my Computer Quiz!")
 
-playing = input("Do you want to play? ")
+correct_input = False
 
-if playing.lower() != "yes":
-    quit()
+while correct_input == False:
+    user_input = input("Do you want to play this game (y/n)? ")
+    if user_input.upper() == "Y":
+        correct_input = True
+        print("Let's have some fun!")
+    elif user_input.upper() == "N":
+        correct_input = True
+        print("I'm sorry to hear this. Maybe next time")
+        quit()
+    else:
+        print("Please enter a Y or N value.")
 
-print("Okay, Let's Play :) ")
 score = 0
 
 answer = input("What does CPU stand for? ")
