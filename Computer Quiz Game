@@ -9,7 +9,7 @@ while correct_input == False:
         print("Let's have some fun!")
     elif user_input.upper() == "N":
         correct_input = True
-        print("I'm sorry to hear this. Maybe next time")
+        print("I'm sorry to hear this. Maybe next time.")
         quit()
     else:
         print("Please enter a Y or N value.")
