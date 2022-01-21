@@ -2,6 +2,8 @@ import string
 import random
 from words import words
 
+# be sure to download 'Hangman Game - words' python file (via klinitz/Projects)
+
 def get_valid_word(words):
     word = random.choice(words)  # randomly chooses something from the list
     while "-" in word or " " in word:
